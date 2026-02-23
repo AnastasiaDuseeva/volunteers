@@ -1,0 +1,88 @@
+# =============================================
+# .gitignore для веб-приложения управления волонтёрскими мероприятиями
+# По ТЗКП (PHP 8.3 + Open Server + MySQL + PHPMailer)
+# =============================================
+
+# === Open Server и локальная среда ===
+/OpenServer/
+/OpenServer/userdata/
+/OpenServer/domains/
+/*.bak
+*.tmp
+*.temp
+Thumbs.db
+.DS_Store
+
+# === База данных и дампы (никогда не коммитим!) ===
+*.sql
+*.sql.gz
+*.sql.zip
+*.sql.tar
+db_dump/
+database/backups/
+backup/
+dumps/
+
+# === Папки с пользовательскими файлами ===
+uploads/
+public/uploads/
+media/
+files/
+images/volunteers/
+documents/
+
+# === Конфигурационные файлы с паролями и чувствительными данными ===
+.env
+.env.local
+.env.example
+config.local.php
+config.php.local
+settings.local.php
+constants.php
+db_config.php
+smtp_config.php
+
+# === Логи и кэш ===
+logs/
+storage/logs/
+error.log
+access.log
+php_error.log
+debug.log
+*.log
+cache/
+tmp/
+temp/
+session/
+sessions/
+
+# === PHP и Composer ===
+/vendor/
+composer.phar
+composer.lock
+.phpunit.result.cache
+/phpunit.xml
+.phpcs.cache
+
+# === IDE и редакторы ===
+.vscode/
+.idea/
+*.sublime-*
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# === Временные и системные файлы ===
+*.tmp
+*.temp
+*.cache
+*.bak
+*.old
+
+# === Безопасность ===
+# Никогда не коммитим персональные данные волонтёров
+*.csv
+*.xlsx
+contacts.xlsx
+volunteers_list.*
