@@ -20,12 +20,12 @@
 
 Как работать со своей задачей:
 
-git checkout dev
-git pull origin dev
-git checkout -b feature/название-задачи
-git add .
-git commit -m "Описание что сделано"
-git push origin feature/название-задачи
+- git checkout dev
+- git pull origin dev
+- git checkout -b feature/название-задачи
+- git add .
+- git commit -m "Описание что сделано"
+- git push origin feature/название-задачи
 
 
 После этого Pull Request на GitHub: твоя ветка → `dev`.
