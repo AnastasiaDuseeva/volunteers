@@ -1,4 +1,3 @@
-<img width="1353" height="683" alt="image" src="https://github.com/user-attachments/assets/4dccdbdc-ce9d-457c-9fac-2a93a72a39dc" /># volunteers
 # Веб-приложение для управления волонтёрскими мероприятиями
 
 ## О проекте
