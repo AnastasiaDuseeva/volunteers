@@ -14,5 +14,23 @@
 - Ножкина Карина
 - Гулина Алина
 
-## Структура проекта
-(см. ниже)
+# Работа с Git и ветками
+
+Ветки проекта: `main` — стабильная версия, `dev` — общая ветка разработки, `feature/...` — ветки для отдельных задач.
+
+Как работать со своей задачей:
+
+- git checkout dev
+- git pull origin dev
+- git checkout -b feature/название-задачи
+- git add .
+- git commit -m "Описание что сделано"
+- git push origin feature/название-задачи
+
+
+После этого Pull Request на GitHub: твоя ветка → `dev`.
+
+Как получить изменения от других участников:
+```
+git checkout dev
+git pull origin dev
