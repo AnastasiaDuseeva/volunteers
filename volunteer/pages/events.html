@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мероприятия</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/events.css">
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="../img/icon/logo.png">
+                </div>
+                <div class="logo-text">
+                    <span>Поможем<br>вместе</span>
+                </div>
+            </div>
+
+            <div class="header-actions">
+                <button class="icon-btn" aria-label="Поиск" onclick="window.location.href='search.php'"> 
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="7"/>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                    </svg>
+                </button>
+
+                <a href="login.php" class="login-btn"><img src="../img/icon/input.png">Войти</a>
+            </div>
+        </header>
+
+        <main class="events-layout">
+            <aside class="filters">
+                <form class="filters-form" action="#" method="get">
+                    <div class="filter-group">
+                        <select name="city" class="filter-select">
+                            <option value="Город">Город</option>
+                            <option value="Москва">Москва</option>
+                            <option value="Владимир">Владимир</option>
+                            <option value="Санкт-Петербург">Санкт-Петербург</option>
+                        </select>
+                    </div>
+
+                <div class="filter-group">
+                    <select name="category" class="filter-select">
+                        <option value="category">Категория</option>
+                        <option value="children">Дети и молодежь</option>
+                        <option value="ecology">Экология</option>
+                        <option value="sport">Спорт</option>
+                        <option value="culture">Культура</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <select name="status" class="filter-select">
+                        <option value="status">Статус</option>
+                        <option value="open">Открыт</option>
+                        <option value="closed">Закрыт</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <input type="date" name="date" id="date" class="date-input"> 
+                </div>
+                
+                <div class="filter-actions">
+                    <button type="submit" class="find-btn">Найти</button>
+                </div>
+
+                </form>
+            </aside>
+
+           <div class="events-list">
+
+                <article class="event-card">
+                    <a href="event_details.html" class="event-image">
+                        <img src="../img/events/event1.jpg" alt="Всероссийский проект Мечтай со мной">
+                    </a>
+
+                        <div class="event-main">
+                            <h2 class="event-title">
+                                <a href="event_details.html">Всероссийский проект «Мечтай со мной»</a>
+                            </h2>
+                            
+                            <p class="event-text">
+                                Всероссийский проект, в рамках которого проводятся мероприятия
+                                по воплощению в жизнь заветных желаний детей от 6 до 17 лет
+                                с состоянием здоровья, угрожающим жизни.
+                            </p>
+                        </div>
+
+                        <div class="event-meta">
+                            <div class="meta-item">
+                                <img src="../img/icon/geoloc.png" alt="Город">
+                                <span>г. Москва</span>
+                            </div>
+                            <div class="meta-item">
+                                <img src="../img/icon/calendar.png" alt="Дата">
+                                <span>28 февраля 2026 – 13 мая 2026</span>
+                            </div>
+                        </div>
+
+                        <div class="event-footer">
+                            <span class="tag">Дети и молодежь</span>
+                            <span class="status-badge">Открыт</span>
+                        </div>
+                </article>
+
+                <article class="event-card">
+                    <a href="event_details.html" class="event-image">
+                        <img src="../img/events/event1.jpg" alt="Всероссийский проект Мечтай со мной">
+                    </a>
+
+                    
+                        <div class="event-main">
+                            <h2 class="event-title">
+                                <a href="event_details.html">Всероссийский проект «Мечтай со мной»</a>
+                            </h2>
+                            
+                            <p class="event-text">
+                                Всероссийский проект, в рамках которого проводятся мероприятия
+                                по воплощению в жизнь заветных желаний детей от 6 до 17 лет
+                                с состоянием здоровья, угрожающим жизни.
+                            </p>
+                        </div>
+
+                        <div class="event-meta">
+                            <div class="meta-item">
+                                <img src="../img/icon/geoloc.png" alt="Город">
+                                <span>г. Москва</span>
+                            </div>
+                            <div class="meta-item">
+                                <img src="../img/icon/calendar.png" alt="Дата">
+                                <span>28 февраля 2026 – 13 мая 2026</span>
+                            </div>
+                        </div>
+
+                        <div class="event-footer">
+                            <span class="tag">Дети и молодежь</span>
+                            <span class="status-badge">Открыт</span>
+                        </div>
+                </article>
+
+            </div>  
+        </main>
+    </div>
+<footer>
+    <a href="privacy.php">Политика конфиденциальности</a>
+    <a href="terms.php">Политика использования</a>
+    <a href="requisites.php">Реквизиты</a>
+    <a href="mailto:info@gmail.com">info@gmail.com</a>
+</footer>
+</body>
+</html>
